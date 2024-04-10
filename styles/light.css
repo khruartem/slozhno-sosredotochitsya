@@ -1,26 +1,18 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root .theme_light {
-  --main-color: #FFF1F7;
+  --main-color: #353430;
   --accent-color: #FF8DCB;
   --header-color: #FFC2E6;
   --text-color: #353430;
+  --background-img: url(../images/cover-image-light.png);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --main-color: #FFF1F7;
+    --main-color: #353430;
     --accent-color: #FF8DCB;
     --header-color: #FFC2E6;
-    --text-color: #353430;   
-    }
-  
-    .page {
-      background-image: url(../images/cover-image-light.png);
+    --text-color: #353430;
+    --background-img: url(../images/cover-image-light.png);   
     }
 
     .theme_light .header__rec {
@@ -30,52 +22,16 @@
     .theme_auto .header__rec {
       display: none;
     }
-}
 
-.page.theme_light {
-  color: var(--text-color, #353430);
-  background-color: var(--main-color, #FFF1F7);
-  background-image: url(../images/cover-image-light.png);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.header {
-  color: var(--accent-color, #FF8DCB);
+    .theme_light button:hover {
+      border-bottom: 1px solid rgba(50, 49, 45, 0.4);
+    }
 }
 
 .theme_light .header__rec {
   display: none;
 }
 
-.main-title {
-  color: var(--header-color, #FFC2E6);
-}
-
-
-.shadow-title_header {
-  text-shadow: 4px 4px 0 var(--accent-color, #FF8DCB);
-}
-
-.title-decor {
-  color: var(--main-color, #FFF1F7);
-  background-color: var(--accent-color, #FF8DCB);
-}
-
-.content-section__title {
-  color: var(--accent-color, #FF8DCB);
-}
-
-.link {
-  text-shadow: 1.5px 1.5px 0 var(--accent-color, #FF8DCB);
-}
-
-.footer {
-  color: var(--accent-color, #FF8DCB);
-}
-
-.shadow-title_footer {
-  text-shadow: 2px 2px 0 var(--accent-color, #FF8DCB);
+.theme_light button:hover {
+  border-bottom: 1px solid rgba(50, 49, 45, 0.4);
 }

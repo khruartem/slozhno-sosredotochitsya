@@ -1,55 +1,11 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root .theme_dark {
   --main-color: #000028;
   --accent-color: #ff0070;
   --header-color: #DB00FF;
   --text-color: #F1B2CE;
+  --background-img: url(../images/cover-image-dark.png);
 }
 
-.page.theme_dark {
-  color: var(--text-color, #F1B2CE);
-  background-color: var(--main-color, #000028);
-  background-image: url(../images/cover-image-dark.png);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.header {
-  color: var(--accent-color, #ff0070);
-}
-
-.main-title {
-  color: var(--header-color, #DB00FF);
-}
-
-.shadow-title_header {
-  text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
-}
-
-.title-decor {
-  color: var(--main-color, #000028);
-  background-color: var(--accent-color, #ff0070);
-}
-
-.content-section__title {
-  color: var(--accent-color, #ff0070);
-}
-
-.link {
-  text-shadow: 1.5px 1.5px 0 var(--accent-color, #ff0070);
-}
-
-.footer {
-  color: var(--accent-color, #ff0070);
-}
-
-.shadow-title_footer {
-  text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
+.theme_dark button:hover {
+  border-bottom: 1px solid rgba(255, 0, 112, 0.4);
 }
