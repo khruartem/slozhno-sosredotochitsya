@@ -3,6 +3,7 @@
   --accent-color: #353430;
   --decor-color: #FF8DCB;
   --shadow-color: #FF8DCB;
+  --shadow-link-color: #FF8DCB;
   --header-color: #FFC2E6;
   --text-color: #353430;
   --border-color: rgba(50, 49, 45, 0.4);
@@ -15,6 +16,7 @@
     --accent-color: #353430;
     --decor-color: #FF8DCB;
     --shadow-color: #FF8DCB;
+    --shadow-link-color: #FF8DCB;
     --header-color: #FFC2E6;
     --text-color: #353430;
     --border-color: rgba(50, 49, 45, 0.4);
