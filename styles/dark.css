@@ -1,11 +1,10 @@
 :root .theme_dark {
   --main-color: #000028;
   --accent-color: #ff0070;
+  --decor-color: #ff0070;
+  --shadow-color: #ff0070;
   --header-color: #DB00FF;
   --text-color: #F1B2CE;
+  --border-color: rgba(255, 0, 112, 0.4);
   --background-img: url(../images/cover-image-dark.png);
-}
-
-.theme_dark button:hover {
-  border-bottom: 1px solid rgba(255, 0, 112, 0.4);
 }

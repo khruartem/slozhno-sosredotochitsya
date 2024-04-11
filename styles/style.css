@@ -1,6 +1,6 @@
 .page {
   color: var(--text-color, #F1B2CE);
-  font-family: var(--main-font, 'IBM Plex mono', sans-serif);
+  font-family: var(--main-font, 'IBM Plex mono'), sans-serif;
   font-weight: normal;
   font-size: var(--content-font-size, 18px);
   font-style: normal;
@@ -97,6 +97,10 @@
   appearance: none;
 }
 
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--border-color, rgba(255, 0, 112, 0.4));
+}
+
 .header__theme-menu-button_active {
   outline: 1px solid currentColor;
   pointer-events: none;
@@ -110,17 +114,17 @@
 }
 
 .main-title_shadow {
-  text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
+  text-shadow: 4px 4px 0 var(--shadow-color, #ff0070);
 }
 
 .main-title_shadow-less {
-  text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
+  text-shadow: 2px 2px 0 var(--shadow-color, #ff0070);
 }
 
 .title-decor {
   color: var(--main-color, #000028);
   font-weight: bold;
-  background-color: var(--accent-color, #ff0070);
+  background-color: var(--decor-color, #ff0070);
 }
 
 .title-decor_main-title {
@@ -171,7 +175,11 @@
   text-shadow: 1.5px 1.5px 0 var(--accent-color, #ff0070);
 }
 
-.reasons .content-section__article-list {
+.link:hover {
+  border-bottom: 1px solid currentColor;
+}
+
+.content-section_reasons .content-section__article-list {
   grid-column: 1 / -1;
 }
 
@@ -240,7 +248,7 @@
 
   .gallery-list {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 192px 230px 159px 159px;
+    grid-template-rows: 192px 230px 159px 139px;
   }
 
   .gallery-list__item:nth-child(1) {
@@ -268,7 +276,7 @@
 
 @media (min-width: 1024px) {
   .header__theme-menu {
-    padding-inline-end: 378px;
+    justify-self: center;
     padding-block: 0 273px;
   }
 
@@ -285,11 +293,11 @@
     grid-template-columns: 315px 1fr;
   }
 
-  .reasons .content-section__article-list {
+  .content-section_reasons .content-section__article-list {
     grid-template-columns: repeat(auto-fit, minmax(calc((100vw - var(--content-section-padding, 20px) * 2) / 3 - 40px), 1fr));
   }
 
   .gallery-list {
-    grid-template-rows: 260px 315px 214px 214px;
+    grid-template-rows: 260px 315px 214px 198px;
   }
 }
